@@ -1,0 +1,181 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--primary-color: black;
+	--secondary-color: white;
+	--gray-colr: gray;
+	--h1-size: 40px;
+}
+
+body {
+	background-color: var(--primary-color);
+	width: 100%;
+	max-width: 1350px;
+}
+
+main {
+	margin: 0px 20px;
+}
+
+.title-header {
+	color: var(--secondary-color);
+	font-size: var(--h1-size);
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: 700;
+	font-style: oblique;
+	margin: 20px 0px 10px;
+	text-align: center;
+}
+.title-header-border-bottom {
+	width: 200px;
+	margin: auto;
+}
+
+.profile-image img {
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+	margin: auto;
+}
+
+.followers-container {
+	margin: 50px 0px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-row-gap: 30px;
+	place-items: center;
+}
+.follower {
+	background-color: white;
+	width: 350px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: -10px 1px 10px rgba(0, 0, 0, 0.01);
+}
+
+.profile-info {
+	text-align: center;
+}
+
+.profile-info h1 {
+	font-size: 25px;
+	margin: 10px 0px;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+.profile-info a {
+	display: block;
+	width: 150px;
+	margin: auto;
+	text-align: center;
+	padding: 0.5em 1em;
+	font-size: 18px;
+	text-decoration: none;
+	color: white;
+	background-color: black;
+	border-radius: 20px;
+	transition: 1s;
+	border: 1.5px solid black;
+}
+.profile-info a:hover {
+	background-color: white;
+	color: black;
+}
+
+.button-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 20px 0px;
+}
+
+.button-container .btn-page,
+button {
+	padding: 0.5em 1em;
+	margin: 0px 5px;
+	font-size: 18px;
+	font-weight: 700;
+	cursor: pointer;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+.button-container .btn-page.active-button {
+	background-color: black;
+	color: #fff;
+	border: 1px solid #fff;
+}
+
+@media only screen and (max-width: 1100px) {
+	.follower {
+		width: 300px;
+	}
+}
+
+@media only screen and (max-width: 967px) {
+	.follower {
+		width: 250px;
+	}
+	.profile-info h1 {
+		font-size: 20px;
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	.follower {
+		width: 300px;
+	}
+	.profile-info h1 {
+	}
+	.followers-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media only screen and (max-width: 676px) {
+	.follower {
+		width: 250px;
+	}
+	.profile-info h1 {
+	}
+	.followers-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media only screen and (max-width: 560px) {
+	.follower {
+		width: 350px;
+	}
+	.profile-info h1 {
+		font-size: 30px;
+	}
+	.followers-container {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.follower {
+		width: 250px;
+	}
+	.profile-info h1 {
+		font-size: 16px;
+	}
+	.followers-container {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.button-container .btn-page,
+	button {
+		padding: 0.3em 0.5em;
+		font-size: 14px;
+	}
+}
