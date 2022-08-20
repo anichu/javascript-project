@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Grocery Buds</title>
+		<script
+			src="https://kit.fontawesome.com/57804f697d.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							clifford: "#da373d",
+						},
+					},
+				},
+			};
+		</script>
+	</head>
+	<body>
+		<section class="flex justify-center items-center container mx-auto">
+			<div
+				class="lg:w-1/2 md:w-full border shadow-lg p-5 rounded-lg mt-12 text-center sm:mx-0 mx-2"
+			>
+				<p id="alert" class="w-100 h-5 font-semibold text-base"></p>
+				<h1 class="text-3xl py-2 mb-3">Grocery Bud</h1>
+				<form class="w-full flex" id="form">
+					<input
+						type="text"
+						id="input-element"
+						placeholder="e.g. eggs"
+						class="bg-gray-300 placeholder:text-white indent-4 w-full pr-10 block rounded-l-lg"
+					/>
+					<button
+						type="submit"
+						id="submit-btn"
+						class="bg-sky-300 hover:bg-sky-600 hover:text-white transition-all px-4 py-1 rounded-r-lg"
+					>
+						submit
+					</button>
+				</form>
+
+				<div class="bud-container text-center">
+					<div id="list-items" class="list-items"></div>
+					<button
+						id="clear-btn"
+						class="text-yellow-500 text-xl mt-5 text-center"
+					>
+						Clear Item
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<script type="module" src="app.js"></script>
+	</body>
+</html>
