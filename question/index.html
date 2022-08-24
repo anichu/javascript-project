@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- tailwind css -->
+		<script src="https://cdn.tailwindcss.com"></script>
+		<!-- customize css -->
+		<link rel="stylesheet" href="style.css" />
+		<!-- fontawesome CDN -->
+		<script
+			src="https://kit.fontawesome.com/57804f697d.js"
+			crossorigin="anonymous"
+		></script>
+		<title>Questions</title>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							clifford: "#da373d",
+							gold: "#C59D69",
+						},
+					},
+				},
+			};
+		</script>
+	</head>
+	<body>
+		<header>
+			<h1 class="text-gold uppercase text-center text-5xl mt-10">
+				General Questions
+			</h1>
+		</header>
+
+		<main>
+			<section>
+				<div class="questions m-10">
+					<div
+						class="question mx-auto my-5 lg:w-3/4 md:w-full sm:w-full shadow-md sm:p-10 p-5 rounded-md"
+					>
+						<div class="question-header flex py-3 justify-between items-center">
+							<h2 class="sm:text-2xl text-xl font-semibold">
+								Do You Accept All Major Credit Cards?
+							</h2>
+							<div class="question-btn">
+								<i
+									id="btn"
+									class="fa-solid fa-plus text-xl mx-3 font-bold px-1 text-gold border-2 border-gold cursor-pointer"
+								></i>
+							</div>
+						</div>
+						<div class="hidden h-auto" id="show">
+							<hr />
+							<p class="py-3">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+								dolore illo dolores quia nemo doloribus quaerat, magni numquam
+								repellat reprehenderit.
+							</p>
+						</div>
+					</div>
+					<div
+						class="question mx-auto my-5 lg:w-3/4 md:w-full sm:w-full shadow-md sm:p-10 p-5 rounded-md"
+					>
+						<div class="question-header flex py-3 justify-between items-center">
+							<h2 class="sm:text-2xl text-xl font-semibold">
+								Do You Suppport Local Farmers?
+							</h2>
+							<div class="question-btn">
+								<i
+									id="btn"
+									class="fa-solid fa-plus text-xl mx-3 font-bold px-1 text-gold border-2 border-gold cursor-pointer"
+								></i>
+							</div>
+						</div>
+						<div class="hidden h-auto" id="show">
+							<hr />
+							<p class="py-3">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+								dolore illo dolores quia nemo doloribus quaerat, magni numquam
+								repellat reprehenderit.
+							</p>
+						</div>
+					</div>
+					<div
+						class="question mx-auto my-5 lg:w-3/4 md:w-full sm:w-full shadow-md sm:p-10 p-5 rounded-md"
+					>
+						<div class="question-header flex py-3 justify-between items-center">
+							<h2 class="sm:text-2xl text-xl font-semibold">
+								Do You Use Organic Ingredients?
+							</h2>
+							<div class="question-btn">
+								<i
+									id="btn"
+									class="fa-solid fa-plus text-xl mx-3 font-bold px-1 text-gold border-2 border-gold cursor-pointer"
+								></i>
+							</div>
+						</div>
+						<div class="hidden h-auto" id="show">
+							<hr />
+							<p class="py-3">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+								dolore illo dolores quia nemo doloribus quaerat, magni numquam
+								repellat reprehenderit.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<script src="app.js"></script>
+	</body>
+</html>

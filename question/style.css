@@ -1,0 +1,18 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.question-btn {
+	transition: 1s ease-in-out;
+}
+.question-btn:hover {
+	/* transform: rotate(90deg) !important; */
+}
+
+@keyframes top-down {
+	to {
+		height: 100%;
+	}
+}
